@@ -1,0 +1,5 @@
+bin/* linguist-vendored
+input/* linguist-vendored
+output/* linguist-vendored
+output/* linguist-vendored
+license_gpl_pdftk/* linguist-vendored
