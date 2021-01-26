@@ -7,5 +7,6 @@ Windows 10(2021/01/26)
 ■操作手順
 ①ファイル一式をどこかに格納する。
 ②パスワード付きPDFをinputフォルダに全量格納する。
-③「password_remover_MS932.bat」をダブルクリックで実行
-④outputフォルダに、パスワード無しのPDFが出力されている。
+③「password_remover_MS932.bat」をテキストエディタで開き、「開封時パスワード」を設定し保存する。
+④「password_remover_MS932.bat」をダブルクリックで実行
+⑤outputフォルダに、パスワード無しのPDFが出力されている。
