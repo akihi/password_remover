@@ -14,10 +14,10 @@ rem 【①】拡張子がpdfのファイルを全件ループ
 for %%F in (*.pdf) do (
 
   rem 【②】パスワード解除
-  pdftk %%F input_pw %password% output ..\output\%%F
+  ..\bin\pdftk %%F input_pw %password% output ..\output\%%F
 
   rem 【メモ】パスワード設定
-  rem pdftk %%F output pass%%F user_pw %password%
+  rem ..\bin\pdftk %%F output pass%%F user_pw %password%
 )
 
 cd ..
