@@ -1,23 +1,23 @@
 echo off
 
-rem ŠJ••ƒpƒXƒ[ƒh
+rem é–‹å°æ™‚ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰
 set password="123456"
 
-rem “ü—ÍŒ³ƒtƒHƒ‹ƒ_
+rem å…¥åŠ›å…ƒãƒ•ã‚©ãƒ«ãƒ€
 mkdir input
-rem o—ÍæƒtƒHƒ‹ƒ_
+rem å‡ºåŠ›å…ˆãƒ•ã‚©ãƒ«ãƒ€
 mkdir output
 
 cd input
 
-rem y‡@zŠg’£q‚ªpdf‚Ìƒtƒ@ƒCƒ‹‚ğ‘SŒƒ‹[ƒv
+rem ã€â‘ ã€‘æ‹¡å¼µå­ãŒpdfã®ãƒ•ã‚¡ã‚¤ãƒ«ã‚’å…¨ä»¶ãƒ«ãƒ¼ãƒ—
 for %%F in (*.pdf) do (
 
-  rem y‡AzƒpƒXƒ[ƒh‰ğœ
-  ..\bin\pdftk %%F input_pw %password% output ..\output\%%F
+  rem ã€â‘¡ã€‘ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰è§£é™¤
+  ..\bin\pdftk "%%F" input_pw %password% output "..\output\%%F"
 
-  rem yƒƒ‚zƒpƒXƒ[ƒhİ’è
-  rem ..\bin\pdftk %%F output pass%%F user_pw %password%
+  rem ã€ãƒ¡ãƒ¢ã€‘ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰è¨­å®š
+  rem ..\bin\pdftk "%%F" output pass%%F user_pw %password%
 )
 
 cd ..
